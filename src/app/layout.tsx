@@ -25,11 +25,13 @@ const macondo = Macondo({
   subsets: ["latin"],
 });
 
+const SITE_URL = "https://www.juanisanti.com/";
 const WHATSAPP_PREVIEW_IMAGE = "https://9ohczhtqjcehesjt.public.blob.vercel-storage.com/wapp-honda-TnlmE5eB6VgOiQTKmJHvvNkY7Zljs2.jpg";
 
 export const metadata: Metadata = {
   title: "Juanis & Santi - Save the Date",
   description: "¡Guarda la fecha! 06 · 12 · 2025 | Honda, Tolima",
+  metadataBase: new URL(SITE_URL),
   openGraph: {
     title: "Juanis & Santi - Save the Date",
     description: "¡Guarda la fecha! 06 · 12 · 2025 | Honda, Tolima",
@@ -43,6 +45,7 @@ export const metadata: Metadata = {
     ],
     locale: "es_CO",
     type: "website",
+    siteName: "Juanis & Santi - Boda",
   },
   twitter: {
     card: "summary_large_image",
@@ -72,11 +75,11 @@ export default function RootLayout({
         <meta property="og:image:height" content="630" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="es_CO" />
-        {/* WhatsApp specific meta tags */}
         <meta property="og:site_name" content="Juanis & Santi - Boda" />
         <meta property="og:title" content="Save the Date - 06 · 12 · 2025" />
         <meta property="og:description" content="¡Guarda la fecha! Nos casamos en Honda, Tolima" />
         <meta property="og:image" content={WHATSAPP_PREVIEW_IMAGE} />
+        <meta property="og:image:secure_url" content={WHATSAPP_PREVIEW_IMAGE} />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} ${macondo.variable} antialiased`}
