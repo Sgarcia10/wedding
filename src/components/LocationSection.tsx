@@ -1,4 +1,23 @@
+"use client";
+import { useDevice } from "@/hooks/useDevice";
+
 export default function LocationSection() {
+  const { isMobile } = useDevice();
+
+  const CATHEDRAL_COORDS = "5.2008,-74.7403";
+  const CATHEDRAL_NAME = "Catedral Nuestra Señora del Rosario Honda";
+  
+  const links = {
+    maps: {
+      mobile: `https://maps.google.com/?q=${CATHEDRAL_COORDS}&query=${encodeURIComponent(CATHEDRAL_NAME)}`,
+      desktop: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(CATHEDRAL_NAME)}&query_place_id=ChIJJXfI_364QI4Rm3h3XfqIU-E`
+    },
+    waze: {
+      mobile: `waze://?ll=${CATHEDRAL_COORDS}&navigate=yes`,
+      desktop: "https://ul.waze.com/es/live-map/directions/co/tolima/honda/catedral-nuestra-senora-del-rosario-honda?navigate=yes&to=place.ChIJJXfI_364QI4Rm3h3XfqIU-E"
+    }
+  };
+
   return (
     <section className="relative w-full h-[80vh]">
       <div className="absolute inset-0">
@@ -21,7 +40,7 @@ export default function LocationSection() {
         {/* Location Buttons */}
         <div className="flex gap-6 mt-8">
           <a
-            href="https://www.google.com/maps/place/Catedral+Nuestra+Señora+del+Rosario+-+Honda"
+            href={isMobile ? links.maps.mobile : links.maps.desktop}
             target="_blank"
             rel="noopener noreferrer"
             className="p-4 md:p-6 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300"
@@ -34,7 +53,7 @@ export default function LocationSection() {
           </a>
           
           <a
-            href="https://ul.waze.com/es/live-map/directions/co/tolima/honda/catedral-nuestra-senora-del-rosario-honda?navigate=yes&to=place.ChIJJXfI_364QI4Rm3h3XfqIU-E"
+            href={isMobile ? links.waze.mobile : links.waze.desktop}
             target="_blank"
             rel="noopener noreferrer"
             className="p-4 md:p-6 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300"

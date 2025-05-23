@@ -28,6 +28,14 @@ const macondo = Macondo({
 export const metadata: Metadata = {
   title: "J&S",
   description: "Wedding",
+  icons: {
+    icon: [
+      { url: "/heart.png", type: "image/png" }
+    ],
+    apple: [
+      { url: "/heart.png" }
+    ]
+  }
 };
 
 export default function RootLayout({
