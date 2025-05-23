@@ -29,7 +29,7 @@ export default function AccommodationSection() {
     <section className="relative w-full h-[80vh]">
       <div className="absolute inset-0">
         <img
-          src="/hotel.jpeg"
+          src="https://9ohczhtqjcehesjt.public.blob.vercel-storage.com/hotel-A0Pbrixa31z6kS9Df76Qq3waB89mkq.jpeg"
           alt="Accommodation Options"
           className="w-full h-full object-cover"
         />

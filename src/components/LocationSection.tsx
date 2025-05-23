@@ -23,7 +23,7 @@ export default function LocationSection() {
     <section className="relative w-full h-[80vh]">
       <div className="absolute inset-0">
         <img
-          src="/honda.jpeg"
+          src="https://9ohczhtqjcehesjt.public.blob.vercel-storage.com/honda-I3Pw0ez3aKs8gKhw52Su2rdlYEp8rQ.jpeg"
           alt="Wedding Location"
           className="w-full h-full object-cover"
         />

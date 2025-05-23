@@ -3,7 +3,7 @@ export default function EmotionalSection() {
     <section className="relative w-full h-[80vh] bg-background">
       <div className="absolute inset-0">
         <img
-          src="/honda2.jpeg"
+          src="https://9ohczhtqjcehesjt.public.blob.vercel-storage.com/honda2-ledTGYmO7GeTTRvSyZBI7TG4Y0Cani.jpeg"
           alt="Rio Magdalena Honda"
           className="w-full h-full object-cover"
         />

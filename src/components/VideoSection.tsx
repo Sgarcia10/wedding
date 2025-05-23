@@ -4,8 +4,8 @@ export default function VideoSection() {
   return (
     <section className="relative w-full h-[60vh] overflow-hidden">
       <VideoPlayer
-        mobileSrc="/save_date.mp4"
-        desktopSrc="/save_date_desk.mp4"
+        mobileSrc="https://9ohczhtqjcehesjt.public.blob.vercel-storage.com/save_date-xIhFcRzZMZ7Gn2xWlLLEyfebPmYOpB.mp4"
+        desktopSrc="https://9ohczhtqjcehesjt.public.blob.vercel-storage.com/save_date_desk-lXAkNkfaJvbmnnczB7rds8tGznAEUr.mp4"
         alt="Wedding Video"
       />
       

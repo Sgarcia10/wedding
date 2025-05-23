@@ -12,8 +12,8 @@ export async function GET() {
         height: 630,
       }
     );
-  } catch (error: any) {
-    console.log(`${error.message}`);
+  } catch (error: unknown) {
+    console.log(`${error instanceof Error ? error.message : 'Unknown error'}`);
     return new Response(`Failed to generate the image`, {
       status: 500,
     });
