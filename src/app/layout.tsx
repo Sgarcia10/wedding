@@ -26,7 +26,7 @@ const macondo = Macondo({
 });
 
 const SITE_URL = "https://www.juanisanti.com/";
-const WHATSAPP_PREVIEW_IMAGE = "https://9ohczhtqjcehesjt.public.blob.vercel-storage.com/wapp-honda-TnlmE5eB6VgOiQTKmJHvvNkY7Zljs2.jpg";
+const WHATSAPP_PREVIEW_IMAGE = "https://9ohczhtqjcehesjt.public.blob.vercel-storage.com/wapp-honda-4grnwD9PymmlZ4p6mqdW6lNW692Suk.jpg";
 
 export const metadata: Metadata = {
   title: "Juanis & Santi - Save the Date",
