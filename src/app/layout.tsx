@@ -25,6 +25,8 @@ const macondo = Macondo({
   subsets: ["latin"],
 });
 
+const WHATSAPP_PREVIEW_IMAGE = "https://9ohczhtqjcehesjt.public.blob.vercel-storage.com/wapp-honda-TnlmE5eB6VgOiQTKmJHvvNkY7Zljs2.jpg";
+
 export const metadata: Metadata = {
   title: "Juanis & Santi - Save the Date",
   description: "¡Guarda la fecha! 06 · 12 · 2025 | Honda, Tolima",
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     description: "¡Guarda la fecha! 06 · 12 · 2025 | Honda, Tolima",
     images: [
       {
-        url: "/api/og",
+        url: WHATSAPP_PREVIEW_IMAGE,
         width: 1200,
         height: 630,
         alt: "Save the Date - Juanis & Santi"
@@ -46,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Juanis & Santi - Save the Date",
     description: "¡Guarda la fecha! 06 · 12 · 2025 | Honda, Tolima",
-    images: ["/api/og"],
+    images: [WHATSAPP_PREVIEW_IMAGE],
   },
   icons: {
     icon: [
@@ -74,7 +76,7 @@ export default function RootLayout({
         <meta property="og:site_name" content="Juanis & Santi - Boda" />
         <meta property="og:title" content="Save the Date - 06 · 12 · 2025" />
         <meta property="og:description" content="¡Guarda la fecha! Nos casamos en Honda, Tolima" />
-        <meta property="og:image" content="/api/og" />
+        <meta property="og:image" content={WHATSAPP_PREVIEW_IMAGE} />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} ${macondo.variable} antialiased`}
