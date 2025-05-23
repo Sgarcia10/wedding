@@ -23,7 +23,7 @@ export default function EmotionalSection() {
             Aquí, junto al majestuoso río Magdalena que será testigo eterno de 
             nuestro amor, celebraremos este momento tan especial. Sus aguas, que han 
             visto pasar siglos de historia, ahora guardarán también el recuerdo de 
-            nuestro "sí, acepto" bajo el cielo de la Ciudad de los Puentes.
+            nuestro &quot;sí, acepto&quot; bajo el cielo de la Ciudad de los Puentes.
           </p>
           <div className="decorative-line w-24 md:w-32 mx-auto mt-8"></div>
         </div>
