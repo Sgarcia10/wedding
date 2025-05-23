@@ -9,14 +9,19 @@ export default function AccommodationSection() {
     checkout: "2025-12-08"
   };
 
+  const LOCATION = {
+    name: "Honda, Tolima, Colombia",
+    encoded: encodeURIComponent("Honda, Tolima, Colombia")
+  };
+
   const links = {
     airbnb: {
-      mobile: "airbnb://search?location=Honda%2C%20Tolima%2C%20Colombia&checkin=2025-12-06&checkout=2025-12-08&adults=2",
-      desktop: `https://www.airbnb.com/s/Honda--Tolima--Colombia/homes?checkin=${DATES.checkin}&checkout=${DATES.checkout}&adults=2`
+      mobile: `https://www.airbnb.com/s/${LOCATION.encoded}/homes?check_in=${DATES.checkin}&check_out=${DATES.checkout}&adults=2`,
+      desktop: `https://www.airbnb.com/s/${LOCATION.encoded}/homes?check_in=${DATES.checkin}&check_out=${DATES.checkout}&adults=2`
     },
     booking: {
-      mobile: "booking://hotel/co/honda?checkin=2025-12-06&checkout=2025-12-08&adults=2",
-      desktop: `https://www.booking.com/searchresults.html?ss=Honda%2C+Tolima%2C+Colombia&checkin=${DATES.checkin}&checkout=${DATES.checkout}&group_adults=2&no_rooms=1`
+      mobile: `https://www.booking.com/searchresults.html?ss=${LOCATION.encoded}&checkin=${DATES.checkin}&checkout=${DATES.checkout}&group_adults=2&no_rooms=1&from_sf=1`,
+      desktop: `https://www.booking.com/searchresults.html?ss=${LOCATION.encoded}&checkin=${DATES.checkin}&checkout=${DATES.checkout}&group_adults=2&no_rooms=1`
     }
   };
 
@@ -53,7 +58,7 @@ export default function AccommodationSection() {
             <img
               src="/airbnb.png"
               alt="Airbnb"
-              className="w-8 h-8 md:w-12 md:h-12"
+              className="w-12 h-12 md:w-14 md:h-14"
             />
           </a>
 
@@ -66,7 +71,7 @@ export default function AccommodationSection() {
             <img
               src="/booking.png"
               alt="Booking.com"
-              className="w-8 h-8 md:w-12 md:h-12"
+              className="w-12 h-12 md:w-14 md:h-14"
             />
           </a>
         </div>

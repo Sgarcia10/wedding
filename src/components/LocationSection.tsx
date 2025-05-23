@@ -6,14 +6,15 @@ export default function LocationSection() {
 
   const CATHEDRAL_COORDS = "5.2008,-74.7403";
   const CATHEDRAL_NAME = "Catedral Nuestra Señora del Rosario Honda";
+  const CATHEDRAL_PLACE_ID = "ChIJJXfI_364QI4Rm3h3XfqIU-E";
   
   const links = {
     maps: {
       mobile: `https://maps.google.com/?q=${CATHEDRAL_COORDS}&query=${encodeURIComponent(CATHEDRAL_NAME)}`,
-      desktop: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(CATHEDRAL_NAME)}&query_place_id=ChIJJXfI_364QI4Rm3h3XfqIU-E`
+      desktop: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(CATHEDRAL_NAME)}&query_place_id=${CATHEDRAL_PLACE_ID}`
     },
     waze: {
-      mobile: `waze://?ll=${CATHEDRAL_COORDS}&navigate=yes`,
+      mobile: `https://waze.com/ul?ll=${CATHEDRAL_COORDS}&navigate=yes&zoom=17`,
       desktop: "https://ul.waze.com/es/live-map/directions/co/tolima/honda/catedral-nuestra-senora-del-rosario-honda?navigate=yes&to=place.ChIJJXfI_364QI4Rm3h3XfqIU-E"
     }
   };
@@ -48,7 +49,7 @@ export default function LocationSection() {
             <img
               src="/maps.png"
               alt="Google Maps"
-              className="w-8 h-8 md:w-12 md:h-12"
+              className="w-12 h-12 md:w-14 md:h-14"
             />
           </a>
           
@@ -61,7 +62,7 @@ export default function LocationSection() {
             <img
               src="/waze.png"
               alt="Waze"
-              className="w-8 h-8 md:w-12 md:h-12"
+              className="w-12 h-12 md:w-14 md:h-14"
             />
           </a>
         </div>
