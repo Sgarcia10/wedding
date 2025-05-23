@@ -71,8 +71,8 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="400" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="es_CO" />
         <meta property="og:site_name" content="Juanis & Santi - Boda" />
@@ -80,6 +80,7 @@ export default function RootLayout({
         <meta property="og:description" content="¡Guarda la fecha! Nos casamos en Honda, Tolima" />
         <meta property="og:image" content={WHATSAPP_PREVIEW_IMAGE} />
         <meta property="og:image:secure_url" content={WHATSAPP_PREVIEW_IMAGE} />
+        <meta property="og:image:alt" content="Juanis & Santi - Save the Date" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} ${macondo.variable} antialiased`}
