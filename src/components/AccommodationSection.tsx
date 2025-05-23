@@ -33,22 +33,22 @@ export default function AccommodationSection() {
           alt="Accommodation Options"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/10"></div>
+        <div className="absolute inset-0 bg-black/30"></div>
       </div>
       
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
         <h2 className="save-date">
-          <span className="block text-4xl md:text-6xl mb-4">Hospedaje</span>
-          <span className="block text-xl md:text-2xl tracking-wider">Encuentra el lugar perfecto para tu estadía</span>
+          <span className="block text-4xl md:text-6xl mb-4 drop-shadow-lg">Hospedaje</span>
+          <span className="block text-xl md:text-2xl tracking-wider font-medium drop-shadow-lg">Encuentra el lugar perfecto para tu estadía</span>
         </h2>
         
         <div className="decorative-line w-48 mx-auto my-8"></div>
 
-        <p className="max-w-2xl text-lg md:text-xl text-white/90 leading-relaxed font-light mb-8 italic">
+        <p className="max-w-2xl text-lg md:text-xl text-white font-medium leading-relaxed mb-8 italic drop-shadow-lg">
           ¡Importante! Al ser puente festivo, te recomendamos reservar tu hospedaje con anticipación para encontrar las mejores opciones y precios.
         </p>
         
-        <div className="flex gap-6 mt-4">
+        <div className="flex gap-6 mt-4 justify-center">
           <a
             href={isMobile ? links.airbnb.mobile : links.airbnb.desktop}
             target="_blank"

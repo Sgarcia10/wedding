@@ -15,10 +15,11 @@ export default function Header() {
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-20 bg-background/70 backdrop-blur-sm">
-        <div className="container mx-auto px-4 py-3 md:py-6 relative">
+        <div className="container mx-auto px-4 py-3 md:py-6 flex items-center justify-between">
+          {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(true)}
-            className="absolute left-4 top-1/2 -translate-y-1/2 lg:hidden text-foreground/80 hover:text-foreground p-2"
+            className="lg:hidden text-foreground/80 hover:text-foreground p-2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -36,23 +37,29 @@ export default function Header() {
             </svg>
           </button>
 
-          <h1 className="names text-3xl md:text-5xl text-center">
-            Juanis & Santi
-          </h1>
-          <div className="decorative-line w-24 md:w-32 mx-auto mt-2"></div>
+          {/* Title - Always centered */}
+          <div className="flex-1 flex flex-col items-center">
+            <h1 className="names text-3xl md:text-5xl">
+              Juanis & Santi
+            </h1>
+            <div className="decorative-line w-24 md:w-32 mt-2"></div>
+          </div>
           
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex justify-center mt-6 gap-12">
+          {/* Desktop Navigation - Right aligned */}
+          <nav className="hidden lg:flex items-center gap-8">
             {menuItems.map((item, index) => (
               <a
                 key={index}
                 href={item.href}
-                className="text-foreground/80 hover:text-foreground text-xl font-light tracking-wider transition-colors"
+                className="text-foreground/80 hover:text-foreground text-lg font-light tracking-wider transition-colors whitespace-nowrap"
               >
                 {item.label}
               </a>
             ))}
           </nav>
+
+          {/* Empty div to balance the mobile menu button on small screens */}
+          <div className="w-10 lg:hidden"></div>
         </div>
       </header>
 
