@@ -3,6 +3,7 @@ import VideoSection from "@/components/VideoSection";
 import LocationSection from "@/components/LocationSection";
 import EmotionalSection from "@/components/EmotionalSection";
 import AccommodationSection from "@/components/AccommodationSection";
+import EngagementSection from "@/components/EngagementSection";
 import Sidebar from "@/components/Sidebar";
 
 export default function Home() {
@@ -18,6 +19,10 @@ export default function Home() {
 
         <div id="location">
           <LocationSection />
+        </div>
+
+        <div id="engagement">
+          <EngagementSection />
         </div>
 
         <div id="emotional">

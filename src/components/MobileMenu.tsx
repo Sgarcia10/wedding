@@ -7,6 +7,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   const menuItems = [
     { label: 'Save the Date', href: '#video' },
     { label: 'Ubicación', href: '#location' },
+    { label: 'Compromiso', href: '#engagement' },
     { label: 'Nuestro Honda', href: '#emotional' },
     { label: 'Hospedaje', href: '#accommodation' },
   ];
