@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: "¡Guarda la fecha! 06 · 12 · 2025 | Honda, Tolima",
     images: [
       {
-        url: "/preview.jpg",
+        url: "/api/og",
         width: 1200,
         height: 630,
         alt: "Save the Date - Juanis & Santi"
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Juanis & Santi - Save the Date",
     description: "¡Guarda la fecha! 06 · 12 · 2025 | Honda, Tolima",
-    images: ["/preview.jpg"],
+    images: ["/api/og"],
   },
   icons: {
     icon: [
@@ -74,6 +74,7 @@ export default function RootLayout({
         <meta property="og:site_name" content="Juanis & Santi - Boda" />
         <meta property="og:title" content="Save the Date - 06 · 12 · 2025" />
         <meta property="og:description" content="¡Guarda la fecha! Nos casamos en Honda, Tolima" />
+        <meta property="og:image" content="/api/og" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} ${macondo.variable} antialiased`}
