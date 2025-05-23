@@ -5,6 +5,7 @@ import EmotionalSection from "@/components/EmotionalSection";
 import AccommodationSection from "@/components/AccommodationSection";
 import EngagementSection from "@/components/EngagementSection";
 import Sidebar from "@/components/Sidebar";
+import ScrollIndicator from "@/components/ScrollIndicator";
 
 export default function Home() {
   return (
@@ -33,6 +34,11 @@ export default function Home() {
           <AccommodationSection />
         </div>
       </main>
+
+      {/* Fixed scroll indicator */}
+      <div className="fixed bottom-0 left-0 right-0 z-30 pointer-events-none">
+        <ScrollIndicator />
+      </div>
     </div>
   );
 }

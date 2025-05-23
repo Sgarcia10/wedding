@@ -2,7 +2,7 @@ import VideoPlayer from './VideoPlayer';
 
 export default function EngagementSection() {
   return (
-    <section className="relative w-full h-[60vh] overflow-hidden bg-background">
+    <section className="relative w-full h-[60vh] md:h-[85vh] overflow-hidden bg-background">
       <VideoPlayer
         mobileSrc="https://9ohczhtqjcehesjt.public.blob.vercel-storage.com/engagement2-2lgg7JfB5RUZijHVsj2GD4v2xfO38s.mp4"
         desktopSrc="https://9ohczhtqjcehesjt.public.blob.vercel-storage.com/engagement2-2lgg7JfB5RUZijHVsj2GD4v2xfO38s.mp4"

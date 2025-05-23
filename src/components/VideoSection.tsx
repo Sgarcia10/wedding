@@ -2,7 +2,7 @@ import VideoPlayer from "./VideoPlayer";
 
 export default function VideoSection() {
   return (
-    <section className="relative w-full h-[60vh] overflow-hidden">
+    <section className="relative w-full h-[60vh] md:h-[85vh] overflow-hidden">
       <VideoPlayer
         mobileSrc="https://9ohczhtqjcehesjt.public.blob.vercel-storage.com/save_date-xIhFcRzZMZ7Gn2xWlLLEyfebPmYOpB.mp4"
         desktopSrc="https://9ohczhtqjcehesjt.public.blob.vercel-storage.com/save_date_desk-lXAkNkfaJvbmnnczB7rds8tGznAEUr.mp4"
