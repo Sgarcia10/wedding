@@ -26,8 +26,28 @@ const macondo = Macondo({
 });
 
 export const metadata: Metadata = {
-  title: "J&S",
-  description: "Wedding",
+  title: "Juanis & Santi - Save the Date",
+  description: "¡Guarda la fecha! 06 · 12 · 2025 | Honda, Tolima",
+  openGraph: {
+    title: "Juanis & Santi - Save the Date",
+    description: "¡Guarda la fecha! 06 · 12 · 2025 | Honda, Tolima",
+    images: [
+      {
+        url: "/preview.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Save the Date - Juanis & Santi"
+      }
+    ],
+    locale: "es_CO",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Juanis & Santi - Save the Date",
+    description: "¡Guarda la fecha! 06 · 12 · 2025 | Honda, Tolima",
+    images: ["/preview.jpg"],
+  },
   icons: {
     icon: [
       { url: "/heart.png", type: "image/png" }
@@ -44,7 +64,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
+      <head>
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="es_CO" />
+        {/* WhatsApp specific meta tags */}
+        <meta property="og:site_name" content="Juanis & Santi - Boda" />
+        <meta property="og:title" content="Save the Date - 06 · 12 · 2025" />
+        <meta property="og:description" content="¡Guarda la fecha! Nos casamos en Honda, Tolima" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} ${macondo.variable} antialiased`}
       >
