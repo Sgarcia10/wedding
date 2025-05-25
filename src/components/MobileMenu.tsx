@@ -1,17 +1,11 @@
+import { navigationItems } from "@/config/navigation";
+
 interface MobileMenuProps {
   isOpen: boolean;
   onClose: () => void;
 }
 
 export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
-  const menuItems = [
-    { label: 'Save the Date', href: '#video' },
-    { label: 'Ubicación', href: '#location' },
-    { label: 'Compromiso', href: '#engagement' },
-    { label: 'Nuestro Honda', href: '#emotional' },
-    { label: 'Hospedaje', href: '#accommodation' },
-  ];
-
   if (!isOpen) return null;
 
   return (
@@ -38,7 +32,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         </button>
         
         <nav className="flex flex-col items-center gap-8">
-          {menuItems.map((item, index) => (
+          {navigationItems.map((item, index) => (
             <a
               key={index}
               href={item.href}

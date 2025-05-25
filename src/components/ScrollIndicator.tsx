@@ -19,7 +19,7 @@ export default function ScrollIndicator() {
 
   return (
     <div className="flex flex-col items-center space-y-2">
-      <span className="text-white/70 text-sm font-light tracking-wider">Scroll</span>
+      <span className="text-white/70 text-sm font-light tracking-wider">Desliza</span>
       <div className="animate-bounce">
         <svg 
           xmlns="http://www.w3.org/2000/svg" 

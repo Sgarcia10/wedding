@@ -25,33 +25,42 @@ export default function AccommodationSection() {
     }
   };
 
-  const recommendedHotels = [
-    {
-      name: "Hotel Boutique Casa Belle Epoque",
-      description: "Hotel histórico en el centro de Honda",
-      bookingUrl: "https://www.booking.com/hotel/co/boutique-casa-belle-epoque.html"
-    },
-    {
-      name: "Hotel America Honda",
-      description: "Ubicación céntrica, cerca de la Catedral",
-      bookingUrl: "https://www.booking.com/hotel/co/america-honda.html"
-    },
-    {
-      name: "Hotel El Palermo Honda",
-      description: "Vistas al río Magdalena",
-      bookingUrl: "https://www.booking.com/hotel/co/el-palermo-honda.html"
-    },
-    {
-      name: "Hotel Casa Rojas Honda",
-      description: "Estilo colonial con piscina",
-      bookingUrl: "https://www.booking.com/hotel/co/casa-rojas-honda.html"
-    },
-    {
-      name: "Hotel Posada Las Trampas",
-      description: "Encanto histórico en el centro",
-      bookingUrl: "https://www.booking.com/hotel/co/posada-las-trampas.html"
-    }
-  ];
+  const recommendedHotels = {
+    largeGroups: [
+      {
+        name: "Villa Carmelita",
+        description: "Espaciosa villa con comodidades para grupos",
+        bookingUrl: "https://www.airbnb.com/rooms/1018736142198230727?check_in=2025-12-06&check_out=2025-12-08&guests=1&adults=14&s=67&unique_share_id=90b570c9-7a15-4895-8615-eebd89a94f8d"
+      },
+      {
+        name: "La Posada",
+        description: "Casa amplia ideal para grupos grandes",
+        bookingUrl: "https://www.airbnb.com/rooms/595473698803628634?check_in=2025-12-06&check_out=2025-12-08&guests=1&adults=16&s=67&unique_share_id=6c7a9087-f8d5-433a-9a3e-ddffbce69bd7"
+      },
+      {
+        name: "Casa Xanadu",
+        description: "Casa colonial perfecta para reuniones familiares",
+        bookingUrl: "https://www.airbnb.com/rooms/23829356?check_in=2025-12-06&check_out=2025-12-08&guests=1&adults=14&s=67&unique_share_id=712e8e0f-f434-4a9e-8ec4-2bcd2d247bdc"
+      }
+    ],
+    smallGroups: [
+      {
+        name: "Casa De Amigos Hotel Boutique",
+        description: "Experiencia íntima y personalizada en el corazón de Honda",
+        bookingUrl: "https://www.booking.com/Share-Nu0hA5"
+      },
+      {
+        name: "Hotel Boutique Posada Las Trampas",
+        description: "Hotel boutique con encanto colonial en el centro histórico",
+        bookingUrl: "https://www.booking.com/Share-H6ZjZE"
+      },
+      {
+        name: "Hotel El Virrey Boutique Honda",
+        description: "Elegante hotel boutique con ambiente acogedor",
+        bookingUrl: "https://www.booking.com/Share-UV9sFa"
+      },
+    ]
+  };
 
   return (
     <section className="relative w-full min-h-screen">
@@ -104,21 +113,43 @@ export default function AccommodationSection() {
           </a>
         </div>
 
-        <div className="max-w-3xl mx-auto">
-          <h3 className="text-2xl md:text-3xl font-medium mb-6 drop-shadow-lg">Hoteles Recomendados</h3>
-          <div className="grid gap-6">
-            {recommendedHotels.map((hotel, index) => (
-              <a
-                key={index}
-                href={hotel.bookingUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 p-4 rounded-lg text-left"
-              >
-                <h4 className="text-lg md:text-xl font-medium mb-1">{hotel.name}</h4>
-                <p className="text-sm md:text-base text-white/90">{hotel.description}</p>
-              </a>
-            ))}
+        <div className="max-w-4xl mx-auto w-full">
+          {/* Large Groups Section */}
+          <div className="mb-12">
+            <h3 className="text-2xl md:text-3xl font-medium mb-6 drop-shadow-lg">Para Grupos Grandes</h3>
+            <div className="grid gap-6">
+              {recommendedHotels.largeGroups.map((hotel, index) => (
+                <a
+                  key={index}
+                  href={hotel.bookingUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 p-6 rounded-lg text-left"
+                >
+                  <h4 className="text-lg md:text-xl font-medium mb-2">{hotel.name}</h4>
+                  <p className="text-sm md:text-base text-white/90">{hotel.description}</p>
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Small Groups Section */}
+          <div>
+            <h3 className="text-2xl md:text-3xl font-medium mb-6 drop-shadow-lg">Para Parejas y Grupos Pequeños</h3>
+            <div className="grid gap-6">
+              {recommendedHotels.smallGroups.map((hotel, index) => (
+                <a
+                  key={index}
+                  href={hotel.bookingUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 p-6 rounded-lg text-left"
+                >
+                  <h4 className="text-lg md:text-xl font-medium mb-2">{hotel.name}</h4>
+                  <p className="text-sm md:text-base text-white/90">{hotel.description}</p>
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </div>

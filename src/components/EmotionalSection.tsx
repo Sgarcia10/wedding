@@ -15,15 +15,13 @@ export default function EmotionalSection() {
             Nuestro Honda
           </h2>
           <p className="text-lg md:text-xl text-white/90 leading-relaxed font-light mb-6">
-            Honda no es solo un destino, es el lugar donde nuestros corazones 
-            encuentran su hogar. Un pueblo mágico que une a nuestras familias y 
-            nos recibe con los brazos abiertos para ser testigo de nuestra unión.
+            Honda es más que un destino, es el escenario donde nuestras historias 
+            se entrelazan. Un pueblo mágico que ha visto crecer nuestro amor y 
+            ahora nos recibe con los brazos abiertos para celebrar nuestra unión.
           </p>
           <p className="text-lg md:text-xl text-white/90 leading-relaxed font-light">
-            Aquí, junto al majestuoso río Magdalena que será testigo eterno de 
-            nuestro amor, celebraremos este momento tan especial. Sus aguas, que han 
-            visto pasar siglos de historia, ahora guardarán también el recuerdo de 
-            nuestro &quot;sí, acepto&quot; bajo el cielo de la Ciudad de los Puentes.
+            Aquí, junto al majestuoso río Magdalena y sus aguas milenarias, 
+            escribiremos el próximo capítulo de nuestra historia en la Ciudad de los Puentes.
           </p>
           <div className="decorative-line w-24 md:w-32 mx-auto mt-8"></div>
         </div>

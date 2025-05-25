@@ -1,15 +1,10 @@
-export default function Sidebar() {
-  const menuItems = [
-    { label: 'Save the Date', href: '#video' },
-    { label: 'Ubicación', href: '#location' },
-    { label: 'Nuestro Honda', href: '#emotional' },
-    { label: 'Hospedaje', href: '#accommodation' },
-  ];
+import { navigationItems } from "@/config/navigation";
 
+export default function Sidebar() {
   return (
     <nav className="fixed right-4 top-1/2 transform -translate-y-1/2 z-30 hidden lg:block">
       <div className="flex flex-col gap-6">
-        {menuItems.map((item, index) => (
+        {navigationItems.map((item, index) => (
           <a
             key={index}
             href={item.href}

@@ -1,26 +1,19 @@
 "use client";
 import { useState } from "react";
 import MobileMenu from "./MobileMenu";
+import { navigationItems } from "@/config/navigation";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
-  const menuItems = [
-    { label: 'Save the Date', href: '#video' },
-    { label: 'Ubicación', href: '#location' },
-    { label: 'Compromiso', href: '#engagement' },
-    { label: 'Nuestro Honda', href: '#emotional' },
-    { label: 'Hospedaje', href: '#accommodation' },
-  ];
 
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-20 bg-background/70 backdrop-blur-sm">
-        <div className="container mx-auto px-4 py-3 md:py-6 flex items-center justify-between">
-          {/* Mobile Menu Button */}
+        <div className="container mx-auto px-4 py-3 md:py-6 flex items-center">
+          {/* Mobile Menu Button - Only visible on mobile */}
           <button
             onClick={() => setIsMenuOpen(true)}
-            className="lg:hidden text-foreground/80 hover:text-foreground p-2"
+            className="lg:hidden text-foreground/80 hover:text-foreground p-2 -ml-2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -38,17 +31,19 @@ export default function Header() {
             </svg>
           </button>
 
-          {/* Title - Always centered */}
-          <div className="flex-1 flex flex-col items-center">
-            <h1 className="names text-3xl md:text-5xl">
-              Juanis & Santi
-            </h1>
-            <div className="decorative-line w-24 md:w-32 mt-2"></div>
+          {/* Title - Centered on mobile, left on desktop */}
+          <div className="flex-1 flex lg:justify-start justify-center">
+            <div className="flex flex-col">
+              <h1 className="names text-3xl md:text-5xl">
+                Juanis & Santi
+              </h1>
+              <div className="decorative-line w-24 md:w-32 mt-2"></div>
+            </div>
           </div>
           
           {/* Desktop Navigation - Right aligned */}
           <nav className="hidden lg:flex items-center gap-8">
-            {menuItems.map((item, index) => (
+            {navigationItems.map((item, index) => (
               <a
                 key={index}
                 href={item.href}
@@ -58,9 +53,6 @@ export default function Header() {
               </a>
             ))}
           </nav>
-
-          {/* Empty div to balance the mobile menu button on small screens */}
-          <div className="w-10 lg:hidden"></div>
         </div>
       </header>
 

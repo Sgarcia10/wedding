@@ -4,6 +4,7 @@ import LocationSection from "@/components/LocationSection";
 import EmotionalSection from "@/components/EmotionalSection";
 import AccommodationSection from "@/components/AccommodationSection";
 import EngagementSection from "@/components/EngagementSection";
+import DressCodeSection from "@/components/DressCodeSection";
 import Sidebar from "@/components/Sidebar";
 import ScrollIndicator from "@/components/ScrollIndicator";
 
@@ -28,6 +29,10 @@ export default function Home() {
 
         <div id="emotional">
           <EmotionalSection />
+        </div>
+
+        <div id="dresscode">
+          <DressCodeSection />
         </div>
 
         <div id="accommodation">
