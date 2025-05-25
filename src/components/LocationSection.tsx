@@ -10,12 +10,12 @@ export default function LocationSection() {
   
   const links = {
     maps: {
-      mobile: `https://maps.google.com/?q=${CATHEDRAL_COORDS}&query=${encodeURIComponent(CATHEDRAL_NAME)}`,
-      desktop: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(CATHEDRAL_NAME)}&query_place_id=${CATHEDRAL_PLACE_ID}`
+      mobile: `https://maps.app.goo.gl/mRyLnSmZFcz7EmiKA`,
+      desktop: `https://maps.app.goo.gl/mRyLnSmZFcz7EmiKA`
     },
     waze: {
-      mobile: `https://waze.com/ul?ll=${CATHEDRAL_COORDS}&navigate=yes&zoom=17`,
-      desktop: "https://ul.waze.com/es/live-map/directions/co/tolima/honda/catedral-nuestra-senora-del-rosario-honda?navigate=yes&to=place.ChIJJXfI_364QI4Rm3h3XfqIU-E"
+      mobile: `https://waze.com/ul/hd2fve6cx2`,
+      desktop: "https://waze.com/ul/hd2fve6cx2"
     }
   };
 
