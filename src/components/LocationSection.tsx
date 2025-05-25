@@ -4,9 +4,6 @@ import { useDevice } from "@/hooks/useDevice";
 export default function LocationSection() {
   const { isMobile } = useDevice();
 
-  const CATHEDRAL_COORDS = "5.2008,-74.7403";
-  const CATHEDRAL_NAME = "Catedral Nuestra Señora del Rosario Honda";
-  const CATHEDRAL_PLACE_ID = "ChIJJXfI_364QI4Rm3h3XfqIU-E";
   
   const links = {
     maps: {
