@@ -36,10 +36,14 @@ export default function LocationSection() {
           <span className="block text-2xl md:text-4xl tracking-wider">Tolima, Colombia</span>
         </h2>
         
-        <div className="decorative-line w-48 mx-auto my-12"></div>
+        <div className="decorative-line w-48 mx-auto my-8"></div>
+
+        <p className="text-xl md:text-2xl font-light tracking-wide mb-12">
+          Catedral Nuestra Señora del Rosario
+        </p>
         
         {/* Location Buttons */}
-        <div className="flex gap-6 mt-8">
+        <div className="flex gap-6">
           <a
             href={isMobile ? links.maps.mobile : links.maps.desktop}
             target="_blank"
