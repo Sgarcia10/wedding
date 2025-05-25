@@ -29,7 +29,7 @@ export default function DressCodeSection() {
             <div className="relative">
               <div className="aspect-[3/4] overflow-hidden rounded-2xl shadow-lg">
                 <img
-                  src="/outfit_women.jpg"
+                  src="https://9ohczhtqjcehesjt.public.blob.vercel-storage.com/outfit_women-u5IWsYfypXHRQjVbZ8zyz1W7Tzh1h9.jpg"
                   alt="Women's Dress Code"
                   className="w-full h-full object-cover"
                 />
@@ -62,7 +62,7 @@ export default function DressCodeSection() {
             <div className="relative">
               <div className="aspect-[3/4] overflow-hidden rounded-2xl shadow-lg">
                 <img
-                  src="/outfit_men.jpg"
+                  src="https://9ohczhtqjcehesjt.public.blob.vercel-storage.com/outfit_men-0GpLknYZikSQ6XndpBFfBE34viln6P.jpg"
                   alt="Men's Dress Code"
                   className="w-full h-full object-cover"
                 />
