@@ -13,7 +13,7 @@ export default function Home() {
     <div className="relative min-h-screen bg-background text-foreground">
       <Header />
       <Sidebar />
-      
+
       <main className="pt-20 md:pt-24">
         <div id="video">
           <VideoSection />
@@ -31,9 +31,9 @@ export default function Home() {
           <EmotionalSection />
         </div>
 
-        <div id="dresscode">
+        {/* <div id="dresscode">
           <DressCodeSection />
-        </div>
+        </div> */}
 
         <div id="accommodation">
           <AccommodationSection />

@@ -4,7 +4,7 @@ import { useDevice } from "@/hooks/useDevice";
 export default function LocationSection() {
   const { isMobile } = useDevice();
 
-  
+
   const links = {
     maps: {
       mobile: `https://maps.app.goo.gl/mRyLnSmZFcz7EmiKA`,
@@ -26,19 +26,19 @@ export default function LocationSection() {
         />
         <div className="absolute inset-0 bg-black/20"></div>
       </div>
-      
+
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
         <h2 className="save-date">
           <span className="block text-6xl md:text-8xl mb-4">Honda</span>
           <span className="block text-2xl md:text-4xl tracking-wider">Tolima, Colombia</span>
         </h2>
-        
+
         <div className="decorative-line w-48 mx-auto my-8"></div>
 
-        <p className="text-xl md:text-2xl font-light tracking-wide mb-12">
+        {/* <p className="text-xl md:text-2xl font-light tracking-wide mb-12">
           Catedral Nuestra Señora del Rosario
-        </p>
-        
+        </p> */}
+
         {/* Location Buttons */}
         <div className="flex gap-6">
           <a
@@ -53,7 +53,7 @@ export default function LocationSection() {
               className="w-12 h-12 md:w-14 md:h-14"
             />
           </a>
-          
+
           <a
             href={isMobile ? links.waze.mobile : links.waze.desktop}
             target="_blank"
