@@ -4,7 +4,7 @@ import LocationSection from "@/components/LocationSection";
 import EmotionalSection from "@/components/EmotionalSection";
 import AccommodationSection from "@/components/AccommodationSection";
 import EngagementSection from "@/components/EngagementSection";
-import DressCodeSection from "@/components/DressCodeSection";
+// import DressCodeSection from "@/components/DressCodeSection";
 import Sidebar from "@/components/Sidebar";
 import ScrollIndicator from "@/components/ScrollIndicator";
 
