@@ -1,5 +1,6 @@
 "use client";
 import { useDevice } from "@/hooks/useDevice";
+import Image from "next/image";
 
 export default function AccommodationSection() {
   const { isMobile } = useDevice();
@@ -65,26 +66,28 @@ export default function AccommodationSection() {
   return (
     <section className="relative w-full min-h-screen">
       <div className="absolute inset-0">
-        <img
+        <Image
           src="https://9ohczhtqjcehesjt.public.blob.vercel-storage.com/hotel-A0Pbrixa31z6kS9Df76Qq3waB89mkq.jpeg"
           alt="Accommodation Options"
-          className="w-full h-full object-cover"
+          className="object-cover"
+          fill
+          priority
         />
         <div className="absolute inset-0 bg-black/30"></div>
       </div>
-      
+
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-white text-center px-4 py-20">
         <h2 className="save-date">
           <span className="block text-4xl md:text-6xl mb-4 drop-shadow-lg">Hospedaje</span>
           <span className="block text-xl md:text-2xl tracking-wider font-medium drop-shadow-lg">Encuentra el lugar perfecto para tu estadía</span>
         </h2>
-        
+
         <div className="decorative-line w-48 mx-auto my-8"></div>
 
         <p className="max-w-2xl text-lg md:text-xl text-white font-medium leading-relaxed mb-8 italic drop-shadow-lg">
           ¡Importante! Al ser puente festivo, te recomendamos reservar tu hospedaje con anticipación para encontrar las mejores opciones y precios.
         </p>
-        
+
         <div className="flex gap-6 mt-4 justify-center mb-12">
           <a
             href={isMobile ? links.airbnb.mobile : links.airbnb.desktop}
@@ -92,9 +95,11 @@ export default function AccommodationSection() {
             rel="noopener noreferrer"
             className="p-4 md:p-6 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300"
           >
-            <img
+            <Image
               src="/airbnb.png"
               alt="Airbnb"
+              width={56}
+              height={56}
               className="w-12 h-12 md:w-14 md:h-14"
             />
           </a>
@@ -105,9 +110,11 @@ export default function AccommodationSection() {
             rel="noopener noreferrer"
             className="p-4 md:p-6 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300"
           >
-            <img
+            <Image
               src="/booking.png"
               alt="Booking.com"
+              width={56}
+              height={56}
               className="w-12 h-12 md:w-14 md:h-14"
             />
           </a>

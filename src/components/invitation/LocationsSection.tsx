@@ -1,6 +1,7 @@
 "use client";
 
 import { useDevice } from "@/hooks/useDevice";
+import Image from "next/image";
 
 export default function LocationsSection() {
     const { isMobile } = useDevice();
@@ -110,10 +111,12 @@ export default function LocationsSection() {
 
                         <div className="order-1 md:order-2">
                             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
-                                <img
+                                <Image
                                     src={locations.ceremony.image}
                                     alt={locations.ceremony.name}
-                                    className="w-full h-full object-cover"
+                                    className="object-cover"
+                                    fill
+                                    priority
                                 />
                             </div>
                         </div>
@@ -123,10 +126,12 @@ export default function LocationsSection() {
                     <div className="grid md:grid-cols-2 gap-8 items-center">
                         <div className="order-1">
                             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
-                                <img
+                                <Image
                                     src={locations.reception.image}
                                     alt={locations.reception.name}
-                                    className="w-full h-full object-cover"
+                                    className="object-cover"
+                                    fill
+                                    priority
                                 />
                             </div>
                         </div>

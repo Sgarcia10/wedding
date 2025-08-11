@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 interface InvitationHeaderProps {
     inviteName: string;
@@ -13,10 +14,12 @@ export default function InvitationHeader({ inviteName }: InvitationHeaderProps) 
         <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-black md:bg-white">
             {/* Mobile Background Image */}
             <div className="absolute inset-0 md:hidden">
-                <img
+                <Image
                     src="/iglesia.jpg"
                     alt="Catedral Nuestra Señora del Rosario - Honda, Tolima"
-                    className="w-full h-full object-cover"
+                    className="object-cover"
+                    fill
+                    priority
                 />
                 <div className="absolute inset-0 bg-black/20"></div>
             </div>
@@ -24,10 +27,12 @@ export default function InvitationHeader({ inviteName }: InvitationHeaderProps) 
             {/* Desktop Background Image - Centered with padding */}
             <div className="absolute inset-0 flex items-center justify-center p-8 md:p-12 lg:p-16">
                 <div className="w-full h-full relative max-w-6xl">
-                    <img
+                    <Image
                         src="/invitation.jpeg"
                         alt="Catedral Nuestra Señora del Rosario - Honda, Tolima"
-                        className="hidden md:block w-full h-full object-cover rounded-2xl shadow-2xl"
+                        className="hidden md:block object-cover rounded-2xl shadow-2xl"
+                        fill
+                        priority
                     />
                     {/* Light overlay for readability */}
                     <div className="absolute inset-0 bg-black/10 rounded-2xl hidden md:block"></div>

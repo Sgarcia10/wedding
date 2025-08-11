@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function DressCodeSection() {
   return (
     <section className="relative w-full min-h-[80vh] bg-[#1a1a1a] py-20 overflow-hidden">
@@ -21,17 +23,19 @@ export default function DressCodeSection() {
           <h2 className="save-date text-4xl md:text-5xl mb-8 text-white">
             Etiqueta
           </h2>
-          
+
           <div className="decorative-line w-48 mx-auto mb-16"></div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
             {/* Women's Section */}
             <div className="relative">
               <div className="aspect-[3/4] overflow-hidden rounded-2xl shadow-lg">
-                <img
+                <Image
                   src="https://9ohczhtqjcehesjt.public.blob.vercel-storage.com/outfit_women-u5IWsYfypXHRQjVbZ8zyz1W7Tzh1h9.jpg"
                   alt="Women's Dress Code"
-                  className="w-full h-full object-cover"
+                  className="object-cover"
+                  fill
+                  priority
                 />
                 {/* Mobile overlay */}
                 <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-end p-6 md:hidden">
@@ -61,10 +65,12 @@ export default function DressCodeSection() {
             {/* Men's Section */}
             <div className="relative">
               <div className="aspect-[3/4] overflow-hidden rounded-2xl shadow-lg">
-                <img
+                <Image
                   src="https://9ohczhtqjcehesjt.public.blob.vercel-storage.com/outfit_men-0GpLknYZikSQ6XndpBFfBE34viln6P.jpg"
                   alt="Men's Dress Code"
-                  className="w-full h-full object-cover"
+                  className="object-cover"
+                  fill
+                  priority
                 />
                 {/* Mobile overlay */}
                 <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-end p-6 md:hidden">

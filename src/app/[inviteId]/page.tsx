@@ -3,13 +3,9 @@ import { getInvitationByCode } from '@/utils/invitations';
 import SiteHostsPage from '@/components/SiteHostsPage';
 import { Metadata } from 'next';
 
-interface InvitePageProps {
-    params: {
-        inviteId: string;
-    };
-}
-
-export async function generateMetadata({ params }: InvitePageProps): Promise<Metadata> {
+export async function generateMetadata(
+    { params }: { params: { inviteId: string } }
+): Promise<Metadata> {
     const inviteName = getInvitationByCode(params.inviteId);
 
     if (!inviteName) {
@@ -24,7 +20,7 @@ export async function generateMetadata({ params }: InvitePageProps): Promise<Met
     };
 }
 
-export default function InvitePage({ params }: InvitePageProps) {
+export default async function InvitePage({ params }: { params: { inviteId: string } }) {
     const inviteName = getInvitationByCode(params.inviteId);
 
     if (!inviteName) {

@@ -130,7 +130,7 @@ export default function ItinerarySection() {
                 {/* Final Message */}
                 <div className="text-center mt-16 p-8 bg-white/5 rounded-2xl border border-white/10">
                     <p className="text-lg md:text-xl text-white/90 md:text-black/80 font-light italic">
-                        "¡Prepárense para un fin de semana inolvidable lleno de amor, alegría y celebración!"
+                        ¡Prepárense para un fin de semana inolvidable lleno de amor, alegría y celebración!
                     </p>
                 </div>
             </div>

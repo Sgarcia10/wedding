@@ -1,5 +1,6 @@
 "use client";
 import { useDevice } from "@/hooks/useDevice";
+import Image from "next/image";
 
 export default function LocationSection() {
   const { isMobile } = useDevice();
@@ -19,10 +20,12 @@ export default function LocationSection() {
   return (
     <section className="relative w-full h-[80vh]">
       <div className="absolute inset-0">
-        <img
+        <Image
           src="https://9ohczhtqjcehesjt.public.blob.vercel-storage.com/honda-I3Pw0ez3aKs8gKhw52Su2rdlYEp8rQ.jpeg"
           alt="Wedding Location"
-          className="w-full h-full object-cover"
+          className="object-cover"
+          fill
+          priority
         />
         <div className="absolute inset-0 bg-black/20"></div>
       </div>
@@ -47,9 +50,11 @@ export default function LocationSection() {
             rel="noopener noreferrer"
             className="p-4 md:p-6 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300"
           >
-            <img
+            <Image
               src="/maps.png"
               alt="Google Maps"
+              width={56}
+              height={56}
               className="w-12 h-12 md:w-14 md:h-14"
             />
           </a>
@@ -60,9 +65,11 @@ export default function LocationSection() {
             rel="noopener noreferrer"
             className="p-4 md:p-6 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300"
           >
-            <img
+            <Image
               src="/waze.png"
               alt="Waze"
+              width={56}
+              height={56}
               className="w-12 h-12 md:w-14 md:h-14"
             />
           </a>

@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 export default function DressCodeSection() {
     return (
@@ -18,9 +19,11 @@ export default function DressCodeSection() {
                     {/* Men's Dress Code */}
                     <div className="bg-white/20 md:bg-black/5 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/20 md:border-black/10">
                         <div className="rounded-xl overflow-hidden mb-8">
-                            <img
+                            <Image
                                 src="/dressCodeMen.png"
                                 alt="Vestimenta para Hombres"
+                                width={500}
+                                height={500}
                                 className="w-full h-auto object-contain"
                             />
                         </div>
@@ -35,9 +38,11 @@ export default function DressCodeSection() {
                     {/* Women's Dress Code */}
                     <div className="bg-white/20 md:bg-black/5 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/20 md:border-black/10">
                         <div className="rounded-xl overflow-hidden mb-8">
-                            <img
+                            <Image
                                 src="/dressCodeWomen.png"
                                 alt="Vestimenta para Mujeres"
+                                width={500}
+                                height={500}
                                 className="w-full h-full object-cover"
                             />
                         </div>
