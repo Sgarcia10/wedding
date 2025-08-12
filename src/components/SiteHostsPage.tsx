@@ -36,10 +36,6 @@ export default function SiteHostsPage({ inviteName }: SiteHostsPageProps) {
                 <div id="dresscode">
                     <DressCodeSection />
                 </div>
-
-                <div id="emotional">
-                    <EmotionalSection />
-                </div>
             </main>
 
             {/* Fixed scroll indicator */}
