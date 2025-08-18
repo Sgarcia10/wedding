@@ -60,7 +60,7 @@ export default function LocationsSection() {
         isReversed?: boolean;
     }
 
-    const LocationCard = ({ location, isReversed = false }: LocationCardProps) => (
+    const LocationCard = ({ location }: LocationCardProps) => (
         <div className="relative">
             {/* Mobile: Image Background with Overlay */}
             <div className="md:hidden relative h-[500px] w-full">

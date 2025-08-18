@@ -1,5 +1,4 @@
 import Header from "@/components/Header";
-import EmotionalSection from "@/components/EmotionalSection";
 import Sidebar from "@/components/Sidebar";
 import ScrollIndicator from "@/components/ScrollIndicator";
 import ItinerarySection from "@/components/invitation/ItinerarySection";
