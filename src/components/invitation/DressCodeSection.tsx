@@ -63,7 +63,7 @@ export default function DressCodeSection() {
                         </svg>
                         <h4 className="text-xl font-medium text-white md:text-black mb-3">Clima Tropical</h4>
                         <p className="text-white/90 md:text-black/80">
-                            Honda tiene un clima cálido, así que elige telas frescas y cómodas para disfrutar al máximo
+                            Honda tiene un clima cálido (36°C), así que elige telas frescas y cómodas para disfrutar al máximo
                         </p>
                     </div>
                 </div>
