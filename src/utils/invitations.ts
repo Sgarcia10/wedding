@@ -6,14 +6,14 @@ export interface Invitation {
 }
 
 export function getInvitationByCode(inviteCode: string): string | null {
-    const invitations = invitationsData as Record<string, string>;
-    return invitations[inviteCode] || null;
+    const invitation = (invitationsData as Record<string, { name: string; friendly: string }>)[inviteCode];
+    return invitation ? invitation.friendly : null;
 }
 
 export function getAllInvitations(): Invitation[] {
-    const invitations = invitationsData as Record<string, string>;
-    return Object.entries(invitations).map(([id, name]) => ({
+    const invitations = invitationsData as Record<string, { name: string; friendly: string }>;
+    return Object.entries(invitations).map(([id, invitation]) => ({
         id,
-        name
+        name: invitation.name
     }));
 }
