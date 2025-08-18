@@ -24,16 +24,14 @@ export default function SiteHostsPage({ inviteName }: SiteHostsPageProps) {
             </div>
 
             <main>
+                <div id="dresscode">
+                    <DressCodeSection />
+                </div>
                 <div id="itinerary">
                     <ItinerarySection />
                 </div>
-
                 <div id="locations">
                     <LocationsSection />
-                </div>
-
-                <div id="dresscode">
-                    <DressCodeSection />
                 </div>
             </main>
 
